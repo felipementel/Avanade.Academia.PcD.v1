@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "4.2.0.0",
+        "fileVersion": "4.2.0-4.22220.2 (1e40aa11)",
+        "semanticVersion": "4.2.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "S4487",
+          "level": "warning",
+          "message": "Remove this unread private field '_logger' or refactor the code to use its value.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Proj/Eventos/Avanade.Academia.PcD.v1/src/Avanade.Academia.PcD.Api/Controllers/WeatherForecastController.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 61,
+                  "endLine": 10,
+                  "endColumn": 68
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "S4487": {
+          "id": "S4487",
+          "shortDescription": "Unread \"private\" fields should be removed",
+          "fullDescription": "Private fields only used to store values without reading them later is a case of dead store. So changing the value of such field is useless and most probably indicates a serious error in the code.",
+          "defaultLevel": "note",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4487",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope",
+              "Unnecessary"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

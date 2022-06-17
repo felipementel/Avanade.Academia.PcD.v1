@@ -1,0 +1,2 @@
+﻿C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Application\CursoDto.cs
+C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Application\ProfessorDto.cs

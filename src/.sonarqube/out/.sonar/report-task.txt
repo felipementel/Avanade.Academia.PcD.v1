@@ -1,0 +1,6 @@
+projectKey=re23rf34fg34g
+serverUrl=http://localhost:8145
+serverVersion=8.9.9.56886
+dashboardUrl=http://localhost:8145/dashboard?id=re23rf34fg34g
+ceTaskId=AYFzCh4B6LMVtxOmxAMo
+ceTaskUrl=http://localhost:8145/api/ce/task?id=AYFzCh4B6LMVtxOmxAMo
