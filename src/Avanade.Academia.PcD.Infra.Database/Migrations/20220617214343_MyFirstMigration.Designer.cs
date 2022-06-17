@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Avanade.Academia.PcD.Infra.Database.Migrations
 {
     [DbContext(typeof(ProjetoContext))]
-    [Migration("20220617200214_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20220617214343_MyFirstMigration")]
+    partial class MyFirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -24,28 +24,17 @@ namespace Avanade.Academia.PcD.Infra.Database.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("Avanade.Academia.PcD.Domain.Entities.BaseEntity", b =>
+            modelBuilder.Entity("Avanade.Academia.PcD.Domain.Entities.Professor", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("DataAtualizacao")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("DataAtualizacao");
+                        .HasColumnType("datetime2");
 
                     b.Property<DateTime>("DataCriacao")
-                        .HasColumnType("Datetime")
-                        .HasColumnName("DataCriacao");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("BaseEntity");
-                });
-
-            modelBuilder.Entity("Avanade.Academia.PcD.Domain.Entities.Professor", b =>
-                {
-                    b.HasBaseType("Avanade.Academia.PcD.Domain.Entities.BaseEntity");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Nome")
                         .IsRequired()
@@ -53,19 +42,12 @@ namespace Avanade.Academia.PcD.Infra.Database.Migrations
                         .HasColumnName("NomeProfessor");
 
                     b.Property<decimal>("Salario")
-                        .HasColumnType("decimal(18,2)")
+                        .HasColumnType("decimal(5,2)")
                         .HasColumnName("SalarioProfessor");
 
-                    b.ToTable("TblProfessor", (string)null);
-                });
+                    b.HasKey("Id");
 
-            modelBuilder.Entity("Avanade.Academia.PcD.Domain.Entities.Professor", b =>
-                {
-                    b.HasOne("Avanade.Academia.PcD.Domain.Entities.BaseEntity", null)
-                        .WithOne()
-                        .HasForeignKey("Avanade.Academia.PcD.Domain.Entities.Professor", "Id")
-                        .OnDelete(DeleteBehavior.ClientCascade)
-                        .IsRequired();
+                    b.ToTable("TblProfessor", (string)null);
                 });
 #pragma warning restore 612, 618
         }

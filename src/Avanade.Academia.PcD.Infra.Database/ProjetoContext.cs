@@ -6,32 +6,17 @@ namespace Avanade.Academia.PcD.Infra.Database
 {
     public class ProjetoContext : DbContext
     {
-        public ProjetoContext(DbContextOptions<ProjetoContext> options)
-        : base(options)
-        {
-        }
-
-        public ProjetoContext()
-        {
-
-        }
-
         public DbSet<Professor> Professores { get; set; }
-
         //public DbSet<Curso> Cursos { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Persist Security Info=False;User ID=sa;Initial Catalog=DesafioAvanade;Data Source=localhost:1433");
-
-            //base.OnConfiguring(optionsBuilder);
+            optionsBuilder.UseSqlServer(@"Data Source='localhost, 1433';User ID=sa;Database=Avanade; Password=Avanade@123;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            new BaseEntityTypeConfiguration().Configure(modelBuilder.Entity<BaseEntity>());
-            new ProfessorEntityTypeConfiguration().Configure(modelBuilder.Entity<Professor>());
-
+            modelBuilder.ApplyConfiguration(new ProfessorEntityTypeConfiguration());
             base.OnModelCreating(modelBuilder);
         }
     }
