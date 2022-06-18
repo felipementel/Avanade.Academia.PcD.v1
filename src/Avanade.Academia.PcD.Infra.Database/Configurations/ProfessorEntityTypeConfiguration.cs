@@ -16,7 +16,8 @@ namespace Avanade.Academia.PcD.Infra.Database.Configurations
 
             builder
                 .Property(x => x.Salario)
-                .HasColumnName("SalarioProfessor");
+                .HasColumnName("SalarioProfessor")
+                .HasColumnType("decimal(5,2)");
         }
     }
 }

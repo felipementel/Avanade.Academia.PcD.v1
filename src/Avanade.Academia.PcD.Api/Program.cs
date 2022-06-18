@@ -1,8 +1,5 @@
 
 //using Avanade.Academia.PcD.Infra.Database;
-using Avanade.Academia.PcD.Infra.Database;
-using Microsoft.EntityFrameworkCore;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
