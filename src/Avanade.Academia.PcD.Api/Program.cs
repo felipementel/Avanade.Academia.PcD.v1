@@ -19,7 +19,10 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddTransient<IProfessorAppService, ProfessorAppService>();
 builder.Services.AddScoped<IProfessorService, ProfessorService>();
 builder.Services.AddScoped<IProfessorRepository, ProfessorRepository>();
-builder.Services.AddDbContextFactory<ProjetoContext>();
+builder.Services.AddDbContextFactory<ProjetoContext>(p =>
+{
+    p.UseQueryTrackingBehavior(Microsoft.EntityFrameworkCore.QueryTrackingBehavior.TrackAll);
+});
 
 var app = builder.Build();
 
