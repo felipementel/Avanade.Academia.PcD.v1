@@ -7,7 +7,7 @@
             string nome,
             decimal salario
             )
-            : base( dataAtualizacao)
+            : base(dataAtualizacao)
         {
             Nome = nome;
             Salario = salario;

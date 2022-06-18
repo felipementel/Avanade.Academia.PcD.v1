@@ -12,7 +12,7 @@
     <ConfigSetting Id="BuildUri" />
     <ConfigSetting Id="TfsUri" />
     <ConfigSetting Id="VsCoverageConverterToolPath" />
-    <ConfigSetting Id="settings.file.path" Value="C:\Users\f.pimentel.augusto\.dotnet\tools\.store\dotnet-sonarscanner\5.5.3\dotnet-sonarscanner\5.5.3\tools\net5.0\any\SonarQube.Analysis.xml" />
+    <ConfigSetting Id="settings.file.path" Value="C:\Users\f.pimentel.augusto\.dotnet\tools\.store\dotnet-sonarscanner\5.6.0\dotnet-sonarscanner\5.6.0\tools\net5.0\any\SonarQube.Analysis.xml" />
   </AdditionalConfig>
   <ServerSettings>
     <Property Name="sonaranalyzer-cs.nuget.packageVersion">8.22.0.31243</Property>

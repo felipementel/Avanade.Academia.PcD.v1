@@ -1,7 +1,8 @@
-g
-^C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Domain\Entities\BaseEntity.csutf-8b
-YC:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Domain\Entities\Curso.csutf-8f
-]C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Domain\Entities\Professor.csutf-8í
-ÜC:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Domain\obj\Debug\net6.0\Avanade.Academia.PcD.Domain.GlobalUsings.g.csutf-8ì
-áC:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Domain\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.csutf-8ê
-ÑC:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Domain\obj\Debug\net6.0\Avanade.Academia.PcD.Domain.AssemblyInfo.csutf-8
+a
+XC:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Application\CursoDto.csutf-8x
+oC:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Application\Interfaces\IProfessorAppService.csutf-8e
+\C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Application\ProfessorDto.csutf-8u
+lC:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Application\Services\ProfessorAppService.csutf-8ú
+êC:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Application\obj\Debug\net6.0\Avanade.Academia.PcD.Application.GlobalUsings.g.csutf-8ò
+åC:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Application\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.csutf-8ö
+éC:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Application\obj\Debug\net6.0\Avanade.Academia.PcD.Application.AssemblyInfo.csutf-8

@@ -1,3 +1,4 @@
-﻿C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Domain\Entities\BaseEntity.cs
-C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Domain\Entities\Curso.cs
-C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Domain\Entities\Professor.cs
+﻿C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Application\CursoDto.cs
+C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Application\Interfaces\IProfessorAppService.cs
+C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Application\ProfessorDto.cs
+C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Application\Services\ProfessorAppService.cs

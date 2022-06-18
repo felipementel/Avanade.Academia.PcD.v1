@@ -12,31 +12,18 @@
       },
       "results": [
         {
-          "ruleId": "CS8618",
+          "ruleId": "S927",
           "level": "warning",
-          "message": "Non-nullable property 'Professor' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "message": "Rename parameter 'professor' to 'professorDto' to match the interface declaration.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Proj/Eventos/Avanade.Academia.PcD.v1/src/Avanade.Academia.PcD.Domain/Entities/Curso.cs",
+                "uri": "file:///C:/Proj/Eventos/Avanade.Academia.PcD.v1/src/Avanade.Academia.PcD.Application/Services/ProfessorAppService.cs",
                 "region": {
-                  "startLine": 5,
-                  "startColumn": 16,
-                  "endLine": 5,
-                  "endColumn": 21
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Proj/Eventos/Avanade.Academia.PcD.v1/src/Avanade.Academia.PcD.Domain/Entities/Curso.cs",
-                "region": {
-                  "startLine": 20,
-                  "startColumn": 26,
-                  "endLine": 20,
-                  "endColumn": 35
+                  "startLine": 7,
+                  "startColumn": 61,
+                  "endLine": 7,
+                  "endColumn": 70
                 }
               }
             }
@@ -47,17 +34,20 @@
         }
       ],
       "rules": {
-        "CS8618": {
-          "id": "CS8618",
-          "shortDescription": "Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.",
+        "S927": {
+          "id": "S927",
+          "shortDescription": "Parameter names should match base declaration and other partial definitions",
+          "fullDescription": "The name of a parameter in an externally visible. This rule raises an issue when method override does not match the name of the parameter in the base declaration of the method, or the name of the parameter in the interface declaration of the method or the name of any other partial definition.",
           "defaultLevel": "warning",
-          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8618)",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-927",
           "properties": {
-            "category": "Compiler",
+            "category": "Critical Code Smell",
             "isEnabledByDefault": true,
             "tags": [
-              "Compiler",
-              "Telemetry"
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
             ]
           }
         }

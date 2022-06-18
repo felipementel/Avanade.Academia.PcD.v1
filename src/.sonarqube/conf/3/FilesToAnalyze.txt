@@ -1,2 +1,9 @@
-﻿C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Application\CursoDto.cs
-C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Application\ProfessorDto.cs
+﻿C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Api\Controllers\ProfessoresController.cs
+C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Api\Program.cs
+C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Api\obj\Debug\net6.0\Avanade.Academia.PcD.Api.GlobalUsings.g.cs
+C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Api\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Api\obj\Debug\net6.0\Avanade.Academia.PcD.Api.AssemblyInfo.cs
+C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Api\obj\Debug\net6.0\Avanade.Academia.PcD.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Api\appsettings.Development.json
+C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Api\appsettings.json
+C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Api\Properties\launchSettings.json

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
-  <ProjectName>Avanade.Academia.PcD.Infra.Database</ProjectName>
+  <ProjectName>Avanade.Academia.PcD.Domain</ProjectName>
   <ProjectLanguage>C#</ProjectLanguage>
   <ProjectType>Product</ProjectType>
-  <ProjectGuid>551c6628-c732-41ac-bdbe-e0f3fc986be7</ProjectGuid>
-  <FullPath>C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Infra.Database\Avanade.Academia.PcD.Infra.Database.csproj</FullPath>
+  <ProjectGuid>bd95ec52-31b2-4293-84da-48e98c77b651</ProjectGuid>
+  <FullPath>C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Domain\Avanade.Academia.PcD.Domain.csproj</FullPath>
   <IsExcluded>false</IsExcluded>
   <AnalysisResults>
     <AnalysisResult Id="FilesToAnalyze" Location="C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\.sonarqube\conf\0\FilesToAnalyze.txt" />

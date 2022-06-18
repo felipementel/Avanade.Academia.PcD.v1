@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SonarProjectConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/analyzer/2021/1">
   <AnalysisConfigPath>C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\.sonarqube\conf\SonarQubeAnalysisConfig.xml</AnalysisConfigPath>
-  <ProjectPath>C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Infra.Database\Avanade.Academia.PcD.Infra.Database.csproj</ProjectPath>
+  <ProjectPath>C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Domain\Avanade.Academia.PcD.Domain.csproj</ProjectPath>
   <FilesToAnalyzePath>C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\.sonarqube\conf\0\FilesToAnalyze.txt</FilesToAnalyzePath>
   <OutPath>C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\.sonarqube\out\0</OutPath>
   <ProjectType>Product</ProjectType>

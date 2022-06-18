@@ -1,5 +1,7 @@
-¤
-XC:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Application\CursoDto.cs 8r,	
-!#%'()*+-./0123456‚)*+./01234›
-\C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Application\ProfessorDto.cs 8r#	
- !"$%&'()*+‚ !"%&'()
+ü
+iC:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Api\Controllers\ProfessoresController.cs 8
+rf	
+ "#$%&'(*+,-./012346789;<=>?ABCDEFGHIKLMNOPQRSTUWXYZ[\]_`abcdefghjlmopqrstuvx‚'(*.29;<=HIKOS\]_cgpqs{
+OC:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Api\Program.cs8jr	
+x‚	
+

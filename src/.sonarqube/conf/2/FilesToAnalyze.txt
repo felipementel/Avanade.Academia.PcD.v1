@@ -1,9 +1,7 @@
-﻿C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Api\Controllers\WeatherForecastController.cs
-C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Api\Program.cs
-C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Api\obj\Debug\net6.0\Avanade.Academia.PcD.Api.GlobalUsings.g.cs
-C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Api\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
-C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Api\obj\Debug\net6.0\Avanade.Academia.PcD.Api.AssemblyInfo.cs
-C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Api\obj\Debug\net6.0\Avanade.Academia.PcD.Api.MvcApplicationPartsAssemblyInfo.cs
-C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Api\appsettings.Development.json
-C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Api\appsettings.json
-C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Api\Properties\launchSettings.json
+﻿C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Infra.Database\Configurations\BaseEntityTypeConfiguration.cs
+C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Infra.Database\Configurations\ProfessorEntityTypeConfiguration.cs
+C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Infra.Database\Migrations\20220618121749_InitialCreate.cs
+C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Infra.Database\Migrations\20220618121749_InitialCreate.Designer.cs
+C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Infra.Database\Migrations\ProjetoContextModelSnapshot.cs
+C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Infra.Database\ProjetoContext.cs
+C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Infra.Database\Repositories\ProfessorRepository.cs

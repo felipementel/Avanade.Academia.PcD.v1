@@ -1,23 +1,37 @@
-Ù
-mC:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Api\Controllers\WeatherForecastController.cs
+×
+}C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Infra.Database\Configurations\BaseEntityTypeConfiguration.cs
  
- 	  
-  
-  *- ;
+ 
+ 
+ 	 
+  ,/ GH R		 		 		 /		0 : , ) 0ë
+‚C:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Infra.Database\Configurations\ProfessorEntityTypeConfiguration.cs
+ 
+ 
+ 
+ 	 
+  14 LM V		 		 		 /		0 9 * . 1 -à
+zC:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Infra.Database\Migrations\20220618121749_InitialCreate.cs
+ 
+ 
+ 	 
+   &) 2
 
- 
+ 
 
- 
+ 
 
-  
+ 
 
-! :  () 01 J§
-OC:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Api\Program.cs
-  
- !
- X
-
+# 3 $" %& *2 DP U1 7? NZ _4 ;C Q] b/ 7? JV [3 ;C NZ _% 6   % 5 $ª
+aC:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Infra.Database\ProjetoContext.cs
+ 
+ 
+ 
+ 	 
+  " +		 I
 
- 
- '
- 
+      . 13 6 2   . E 1	( ü   0 < ] a, /0 P «
+sC:\Proj\Eventos\Avanade.Academia.PcD.v1\src\Avanade.Academia.PcD.Infra.Database\Repositories\ProfessorRepository.cs
+ 	 
+  $
