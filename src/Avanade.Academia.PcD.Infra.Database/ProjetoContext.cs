@@ -6,15 +6,10 @@ namespace Avanade.Academia.PcD.Infra.Database
 {
     public class ProjetoContext : DbContext
     {
-        public ProjetoContext(DbContextOptions<ProjetoContext> options)
-        : base(options)
-        {
-        }
-
-        public ProjetoContext()
-        {
-
-        }
+        //public ProjetoContext(DbContextOptions<ProjetoContext> options)
+        //: base(options)
+        //{
+        //}
 
         public DbSet<Professor> Professores { get; set; }
 
@@ -22,9 +17,9 @@ namespace Avanade.Academia.PcD.Infra.Database
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Persist Security Info=False;User ID=sa;Initial Catalog=DesafioAvanade;Data Source=localhost:1433");
-
             //base.OnConfiguring(optionsBuilder);
+
+            optionsBuilder.UseSqlServer(@"Data Source='localhost, 1433'; User ID=sa; Initial Catalog=DesafioAvanade; Password=FelipeEdsonBruno%Password;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -32,7 +27,7 @@ namespace Avanade.Academia.PcD.Infra.Database
             new BaseEntityTypeConfiguration().Configure(modelBuilder.Entity<BaseEntity>());
             new ProfessorEntityTypeConfiguration().Configure(modelBuilder.Entity<Professor>());
 
-            base.OnModelCreating(modelBuilder);
+            //base.OnModelCreating(modelBuilder);
         }
     }
 }

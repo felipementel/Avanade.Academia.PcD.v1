@@ -12,9 +12,6 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//builder.Services.AddDbContext<Avanade.Academia.PcD.>(
-//        options => options.UseSqlServer("name=ConnectionStrings:DefaultConnection"));
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
