@@ -32,7 +32,7 @@ namespace Avanade.Academia.PcD.Infra.Database.Repositories
 
         public Professor LerProfessor(Guid IdProfessor)
         {
-            throw new NotImplementedException();
+            return _projetoContext.Professores.FirstOrDefault(p => p.Id == IdProfessor);
         }
 
         public IEnumerable<Professor> LerProfessores()
