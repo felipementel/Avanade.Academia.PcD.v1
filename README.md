@@ -37,18 +37,18 @@ https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcor
 Para criar o banco de dados usando o Docker no WSL2
 
 ```
-docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=yourStrong@Password" -e MSSQL_PID=Developer -p 1433:1433 -d mcr.microsoft.com/mssql/server:2022-latest
+docker run --name sqlserver --hostname sqlserver -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=yourStrong@Password" -e MSSQL_PID=Developer -p 1433:1433 -d mcr.microsoft.com/mssql/server:2019-CU16-GDR1-ubuntu-20.04
 ```
 
 Para criar o banco de dados utilizando o Migrations
 
 ```
-dotnet ef migrations add InitialCreate --project Avanade.Academia.PcD.Infra.Database
+dotnet ef migrations add InitDatabase --project Avanade.Academia.PcD.Infra.Database -s Avanade.Academia.PcD.Api -c Avanade.Academia.PcD.Infra.Database.ProjetoContext --verbose 
 ```
 Para efetivar a alteração no banco de dados
 
 ```
-dotnet ef database update --project Avanade.Academia.PcD.Infra.Database
+dotnet ef database update InitDatabase --project Avanade.Academia.PcD.Infra.Database -s Avanade.Academia.PcD.Api -c Avanade.Academia.PcD.Infra.Database.ProjetoContext --verbose 
 ```
 
 Para criar outras migrations, caso o modelo seja alterado

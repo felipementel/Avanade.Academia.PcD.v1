@@ -1,5 +1,4 @@
 
-//using Avanade.Academia.PcD.Infra.Database;
 using Avanade.Academia.PcD.Application.Interfaces;
 using Avanade.Academia.PcD.Application.Services;
 using Avanade.Academia.PcD.Domain.Interfaces;
@@ -22,9 +21,9 @@ builder.Services.AddScoped<IProfessorService, ProfessorService>();
 builder.Services.AddScoped<IProfessorRepository, ProfessorRepository>();
 builder.Services.AddDbContext<ProjetoContext>(p =>
 {
-    p.UseSqlServer(connectionString: @"Data Source='localhost, 1433';User ID=sa;Database=Avanade; Password=yourStrong@Password;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False", sql =>
+    p.UseSqlServer(connectionString: @"Data Source='127.0.0.1, 1433';User ID=sa;Initial Catalog=Avanade; Password=yourStrong@Password;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False", sql =>
     {
-        //sql.MigrationsAssembly("Avanade.Academia.PcD.Infra.Database");
+        sql.MigrationsAssembly(assemblyName: "Avanade.Academia.PcD.Infra.Database");
         sql.CommandTimeout(commandTimeout: 60);
         sql.EnableRetryOnFailure(
             maxRetryCount: 5,

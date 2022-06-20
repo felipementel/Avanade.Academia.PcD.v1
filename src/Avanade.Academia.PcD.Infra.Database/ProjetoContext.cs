@@ -6,11 +6,11 @@ namespace Avanade.Academia.PcD.Infra.Database
 {
     public class ProjetoContext : DbContext
     {
-        //public ProjetoContext(DbContextOptions<ProjetoContext> options)
-        //: base(options)
-        //{
+        public ProjetoContext(DbContextOptions<ProjetoContext> options)
+        : base(options)
+        {
             
-        //}
+        }
 
         public DbSet<Professor> Professores { get; set; }
         //public DbSet<Curso> Cursos { get; set; }

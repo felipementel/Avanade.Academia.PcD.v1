@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Avanade.Academia.PcD.Infra.Database.Migrations
 {
     [DbContext(typeof(ProjetoContext))]
-    [Migration("20220620190453_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20220620203700_InitDatabase")]
+    partial class InitDatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
