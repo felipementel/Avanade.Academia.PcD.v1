@@ -28,11 +28,31 @@ https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotne
 
 https://docs.microsoft.com/en-us/ef/core/modeling/
 
+4. Para esconder as chaves (como string de conexão)
 
-4. Comandos
+https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-6.0&tabs=linux
+
+5. Comandos
+
+Para criar o banco de dados usando o Docker no WSL2
+
+```
+docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=yourStrong@Password" -e MSSQL_PID=Developer -p 1433:1433 -d mcr.microsoft.com/mssql/server:2022-latest
+```
 
 Para criar o banco de dados utilizando o Migrations
 
 ```
 dotnet ef migrations add InitialCreate --project Avanade.Academia.PcD.Infra.Database
+```
+Para efetivar a alteração no banco de dados
+
+```
+dotnet ef database update --project Avanade.Academia.PcD.Infra.Database
+```
+
+Para criar outras migrations, caso o modelo seja alterado
+
+```
+dotnet ef migrations add Add<NOME> --project Avanade.Academia.PcD.Infra.Database
 ```
