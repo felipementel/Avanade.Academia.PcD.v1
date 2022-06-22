@@ -1,4 +1,4 @@
-using Avanade.Academia.PcD.Application;
+using Avanade.Academia.PcD.Application.Dtos;
 using Avanade.Academia.PcD.Application.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -28,10 +28,9 @@ namespace Avanade.Academia.PcD.Api.Controllers
                 return Ok(items);
             else
                 return NotFound();
-
         }
 
-        [HttpGet("IdProfessor")]
+        [HttpGet("{IdProfessor}")]
         public IActionResult ObterProfessor(string IdProfessor)
         {
             try
@@ -58,7 +57,7 @@ namespace Avanade.Academia.PcD.Api.Controllers
 
             return CreatedAtAction(
                 nameof(ObterProfessor),
-                new { id = professorAdicionado.IdProfessor },
+                new { IdProfessor = professorAdicionado.IdProfessor },
                 professorAdicionado);
         }
 
@@ -81,10 +80,10 @@ namespace Avanade.Academia.PcD.Api.Controllers
             catch (Exception ex)
             {
                 return BadRequest($"Erro genérico: {ex.Message}");
-            }            
+            }
         }
 
-        [HttpDelete("IdProfessor")]
+        [HttpDelete("{IdProfessor}")]
         public IActionResult DeletarProfessores(string IdProfessor)
         {
             try

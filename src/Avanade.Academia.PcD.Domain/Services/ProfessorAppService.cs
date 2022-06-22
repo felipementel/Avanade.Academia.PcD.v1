@@ -19,14 +19,25 @@ namespace Avanade.Academia.PcD.Application.Services
             return _professorRepository.InserirProcessor(professor);
         }
 
-        public Professor AtualizarProfessor(Guid IdProfessor, Professor ProfessorDto)
+        public Professor? AtualizarProfessor(Guid IdProfessor, Professor Professor)
         {
-            return _professorRepository.AtualizarProfessor(IdProfessor, ProfessorDto);
+            var prof = _professorRepository.LerProfessor(IdProfessor);
+
+            if (prof != null)
+            {
+                prof.Nome = Professor.Nome != String.Empty ? Professor.Nome : prof.Nome;
+                prof.Salario = Professor.Salario != 0 ? Professor.Salario : prof.Salario;
+                prof.Periodo = Professor.Periodo != 0 ? Professor.Periodo : prof.Periodo;
+
+                return _professorRepository.AtualizarProfessor(Professor);
+            }
+
+            return prof;            
         }
 
-        public void DeletarProfessor(Guid IdProfessor)
+        public bool DeletarProfessor(Guid IdProfessor)
         {
-            _professorRepository.ExcluirProfessor(IdProfessor);
+            return _professorRepository.ExcluirProfessor(IdProfessor);
         }
 
         public IEnumerable<Professor> ListarProfessores()
@@ -34,7 +45,7 @@ namespace Avanade.Academia.PcD.Application.Services
             return _professorRepository.LerProfessores();
         }
 
-        public Professor ObterProfessor(Guid IdProfessor)
+        public Professor? ObterProfessor(Guid IdProfessor)
         {
             return _professorRepository.LerProfessor(IdProfessor);
         }

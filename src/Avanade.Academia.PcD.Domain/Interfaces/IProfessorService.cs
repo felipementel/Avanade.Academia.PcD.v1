@@ -8,10 +8,10 @@ namespace Avanade.Academia.PcD.Domain.Interfaces
 
         IEnumerable<Professor> ListarProfessores();
 
-        Professor ObterProfessor(Guid IdProfessor);
+        Professor? ObterProfessor(Guid IdProfessor);
 
-        Professor AtualizarProfessor(Guid IdProfessor, Professor Professor);
+        Professor? AtualizarProfessor(Guid IdProfessor, Professor Professor);
 
-        void DeletarProfessor(Guid IdProfessor);
+        bool DeletarProfessor(Guid IdProfessor);
     }
 }

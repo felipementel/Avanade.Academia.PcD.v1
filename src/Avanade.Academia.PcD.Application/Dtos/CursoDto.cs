@@ -1,16 +1,16 @@
 ﻿using Avanade.Academia.PcD.Domain.Entities;
 
-namespace Avanade.Academia.PcD.Application
+namespace Avanade.Academia.PcD.Application.Dtos
 {
     public class CursoDto
     {
         public CursoDto(
             Guid idCurso,
-            string nome, 
+            string nome,
             string descricao,
-            Guid idProfessor, 
+            Guid idProfessor,
             ProfessorDto professorDto,
-            DateTime dataCriacao, 
+            DateTime dataCriacao,
             DateTime dataAtualizacao)
         {
             IdCurso = idCurso;

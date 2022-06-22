@@ -9,16 +9,23 @@ namespace Avanade.Academia.PcD.Infra.Database.Configurations
         public void Configure(EntityTypeBuilder<BaseEntity> builder)
         {
             builder
-                .HasKey(x => x.Id);
+                .HasKey(x => x.Id)
+                .HasName("Identificador");
+
+            //builder.Property(p => p.Id)
+            //    .ValueGeneratedOnAdd();
 
             builder
                 .Property(x => x.DataCriacao)
                 .HasColumnName("DataCriacao")
-                .HasColumnType("Datetime");
+                .HasDefaultValue(DateTime.Now)
+                .HasColumnType("datetime")
+                .IsRequired();
 
             builder
                 .Property(x => x.DataAtualizacao)
-                .HasColumnName("DataAtualizacao");
+                .HasColumnName("DataAtualizacao")
+                .IsRequired(false);
         }
     }
 }

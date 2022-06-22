@@ -1,4 +1,5 @@
-﻿using Avanade.Academia.PcD.Application.Interfaces;
+﻿using Avanade.Academia.PcD.Application.Dtos;
+using Avanade.Academia.PcD.Application.Interfaces;
 using Avanade.Academia.PcD.Domain.Interfaces;
 
 namespace Avanade.Academia.PcD.Application.Services
@@ -22,9 +23,9 @@ namespace Avanade.Academia.PcD.Application.Services
             return _professorService.AtualizarProfessor(IdProfessor, ProfessorDto);
         }
 
-        public void DeletarProfessor(Guid IdProfessor)
+        public bool DeletarProfessor(Guid IdProfessor)
         {
-            _professorService.DeletarProfessor(IdProfessor);
+            return _professorService.DeletarProfessor(IdProfessor);
         }
 
         public IEnumerable<ProfessorDto> ListarProfessores()
@@ -32,10 +33,10 @@ namespace Avanade.Academia.PcD.Application.Services
             var items = _professorService.ListarProfessores();
 
             return items.Select(p => new ProfessorDto(
-                p.Id, 
+                p.Id,
                 p.Nome,
                 p.Salario,
-                p.DataCriacao, 
+                p.DataCriacao,
                 p.DataAtualizacao));
         }
 

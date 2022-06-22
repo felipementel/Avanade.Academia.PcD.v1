@@ -8,10 +8,10 @@ namespace Avanade.Academia.PcD.Domain.Repositories
 
         IEnumerable<Professor> LerProfessores();
 
-        Professor LerProfessor(Guid IdProfessor);
+        Professor? LerProfessor(Guid IdProfessor);
 
-        Professor AtualizarProfessor(Guid IdProfessor, Professor Professor);
+        Professor AtualizarProfessor(Professor Professor);
 
-        void ExcluirProfessor(Guid IdProfessor);
+        bool ExcluirProfessor(Guid IdProfessor);
     }
 }

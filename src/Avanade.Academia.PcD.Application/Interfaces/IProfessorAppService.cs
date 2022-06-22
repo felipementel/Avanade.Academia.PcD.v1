@@ -1,4 +1,6 @@
-﻿namespace Avanade.Academia.PcD.Application.Interfaces
+﻿using Avanade.Academia.PcD.Application.Dtos;
+
+namespace Avanade.Academia.PcD.Application.Interfaces
 {
     public interface IProfessorAppService
     {
@@ -6,10 +8,10 @@
 
         IEnumerable<ProfessorDto> ListarProfessores();
 
-        ProfessorDto ObterProfessor(Guid IdProfessor);
+        ProfessorDto? ObterProfessor(Guid IdProfessor);
 
-        ProfessorDto AtualizarProfessor(Guid IdProfessor, ProfessorDto ProfessorDto);
+        ProfessorDto? AtualizarProfessor(Guid IdProfessor, ProfessorDto ProfessorDto);
 
-        void DeletarProfessor(Guid IdProfessor);
+        bool DeletarProfessor(Guid IdProfessor);
     }
 }

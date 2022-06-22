@@ -4,6 +4,7 @@ using Avanade.Academia.PcD.Infra.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Avanade.Academia.PcD.Infra.Database.Migrations
 {
     [DbContext(typeof(ProjetoContext))]
-    partial class ProjetoContextModelSnapshot : ModelSnapshot
+    [Migration("20220622002231_Add-UpdateModel-v1")]
+    partial class AddUpdateModelv1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -40,14 +42,11 @@ namespace Avanade.Academia.PcD.Infra.Database.Migrations
                         .HasColumnType("varchar(400)")
                         .HasColumnName("NomeProfessor");
 
-                    b.Property<string>("Periodo")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("varchar(100)")
-                        .HasColumnName("turno");
+                    b.Property<int>("Periodo")
+                        .HasColumnType("int");
 
                     b.Property<decimal>("Salario")
-                        .HasColumnType("decimal(10,2)")
+                        .HasColumnType("decimal(5,2)")
                         .HasColumnName("SalarioProfessor");
 
                     b.HasKey("Id");

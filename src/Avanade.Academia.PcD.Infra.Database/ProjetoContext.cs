@@ -17,6 +17,7 @@ namespace Avanade.Academia.PcD.Infra.Database
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            //Primeira Opção
             //optionsBuilder.UseSqlServer(@"Data Source='localhost, 1433';User ID=sa;Database=Avanade; Password=yourStrong@Password;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
 
             base.OnConfiguring(optionsBuilder);
@@ -24,6 +25,7 @@ namespace Avanade.Academia.PcD.Infra.Database
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            //Um modo de fazer
             //new BaseEntityTypeConfiguration().Configure(modelBuilder.Entity<BaseEntity>());
             //new ProfessorEntityTypeConfiguration().Configure(modelBuilder.Entity<Professor>());
 

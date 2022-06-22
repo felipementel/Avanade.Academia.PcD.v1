@@ -1,6 +1,8 @@
 ﻿using Avanade.Academia.PcD.Domain.Entities;
+using static Avanade.Academia.PcD.Application.Dtos.ValueObject.Enumerators;
+using static Avanade.Academia.PcD.Domain.ValueObject.Enumerators;
 
-namespace Avanade.Academia.PcD.Application
+namespace Avanade.Academia.PcD.Application.Dtos
 {
     public class ProfessorDto
     {
@@ -28,10 +30,13 @@ namespace Avanade.Academia.PcD.Application
 
         public DateTime DataAtualizacao { get; private set; }
 
+        public PeriodoDto Periodo { get; set; }
+
         public static implicit operator Professor(ProfessorDto professorDto) =>
             new(professorDto.DataAtualizacao,
                 professorDto.Nome,
-                professorDto.Salario);
+                professorDto.Salario,
+                (Periodo)Enum.Parse(typeof(Periodo), professorDto.Periodo.ToString()));
 
         public static implicit operator ProfessorDto(Professor professor) =>
             new(professor.Id,

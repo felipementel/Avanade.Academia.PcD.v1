@@ -12,14 +12,27 @@ namespace Avanade.Academia.PcD.Infra.Database.Repositories
             _projetoContext = projetoContext;
         }
 
-        public Professor AtualizarProfessor(Guid IdProfessor, Professor Professor)
+        public Professor AtualizarProfessor(Professor Professor)
         {
-            throw new NotImplementedException();
+            Professor.DataAtualizacao = DateTime.Now;
+
+            _projetoContext.Professores.Update(Professor);            
+            _projetoContext.SaveChanges();
+
+            return Professor;
         }
 
-        public void ExcluirProfessor(Guid IdProfessor)
+        public bool ExcluirProfessor(Guid IdProfessor)
         {
-            throw new NotImplementedException();
+            var prof = _projetoContext.Professores.FirstOrDefault(p => p.Id == IdProfessor);
+
+            if (prof is not null)
+            {
+                _projetoContext.Professores.Remove(prof);
+                return _projetoContext.SaveChanges() == 1 ? true : false;
+            }
+
+            return false;
         }
 
         public Professor InserirProcessor(Professor professor)
@@ -30,7 +43,7 @@ namespace Avanade.Academia.PcD.Infra.Database.Repositories
             return professor;
         }
 
-        public Professor LerProfessor(Guid IdProfessor)
+        public Professor? LerProfessor(Guid IdProfessor)
         {
             return _projetoContext.Professores.FirstOrDefault(p => p.Id == IdProfessor);
         }
